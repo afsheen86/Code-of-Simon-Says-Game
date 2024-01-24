@@ -14,7 +14,6 @@ document.addEventListener("keypress", function () {
   if (started == false) {
     console.log("Game is started.");
     started = true;
-
     levelUp();
   }
 });
@@ -67,12 +66,10 @@ function checkAns(idx) {
       document.querySelector("body").style.backgroundColor = "white";
     }, 150);
     reset();
-    resetHighscore();
   }
 }
 
 function btnPress() {
-  // console.log(this);
   let btn = this;
   userFlash(btn);
 
@@ -99,3 +96,6 @@ function resetHighscore() {
   highscore = 0;
   highscoreDisplay.innerHTML = highscore;
 }
+
+// Example usage:
+// resetHighscore(); // Call this at the beginning of the game or whenever you want to reset the high score.
