@@ -36,7 +36,7 @@ function userFlash(btn) {
 function updateHighscore() {
   if (level > highscore) {
     highscore = level;
-    highscoreDisplay.innerHTML = highscore;
+    highscoreDisplay.innerHTML = "High Score  " + highscore;
   }
 }
 
@@ -67,7 +67,7 @@ function checkAns(idx) {
       document.querySelector("body").style.backgroundColor = "white";
     }, 150);
     reset();
-    resetHighscore();
+    // resetHighscore();
   }
 }
 
